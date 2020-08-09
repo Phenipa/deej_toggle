@@ -1,5 +1,7 @@
 github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
+github.com/akavel/rsrc v0.9.0 h1:HwUDC0+tMFWqN4D5G+o5siGD4oVsC3jn6zM8ocjc3nY=
+github.com/akavel/rsrc v0.9.0/go.mod h1:uLoCtb9J+EyAqh+26kdrTgmzRBFPGOolLWKpdxkKq+c=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -64,6 +66,8 @@ github.com/lxn/win v0.0.0-20191106123917-121afc750dd3 h1:DvGEvKK/Qnhph/EgdBN9zXA
 github.com/lxn/win v0.0.0-20191106123917-121afc750dd3/go.mod h1:ouWl4wViUNh8tPSIwxTVMuS014WakR1hqvBc2I0bMoA=
 github.com/lxn/win v0.0.0-20191128105842-2da648fda5b4 h1:5BmtGkQbch91lglMHQ9JIDGiYCL3kBRBA0ItZTvOcEI=
 github.com/lxn/win v0.0.0-20191128105842-2da648fda5b4/go.mod h1:ouWl4wViUNh8tPSIwxTVMuS014WakR1hqvBc2I0bMoA=
+github.com/micmonay/keybd_event v1.1.0 h1:fQzkqiG/Siwji1Ju9NDkIb8FSFFlPU76YbJntrXdtQw=
+github.com/micmonay/keybd_event v1.1.0/go.mod h1:QS2Kfz0PbPezFqMPEot+l/cK78/tHLZtZ7AbYUCRKsQ=
 github.com/mitchellh/go-homedir v1.1.0 h1:lukF9ziXFxDFPkA1vsr5zpc1XuPDn/wFntq5mG+4E0Y=
 github.com/mitchellh/go-homedir v1.1.0/go.mod h1:SfyaCUpYCn1Vlf4IUYiD9fPX4A5wJrkLzIz1N1q0pr0=
 github.com/mitchellh/go-ps v1.0.0 h1:i6ampVEEF4wQFF+bkYfwYgY+F/uYJDktmvLPf7qIgjc=

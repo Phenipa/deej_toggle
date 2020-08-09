@@ -4,19 +4,21 @@
 # windows only - you can use a device's full name, i.e. "Speakers (Realtek High Definition Audio)", to bind it. this works for both output and input devices (experimental)
 # windows only - you can use 'system' to control the "system sounds" volume
 slider_mapping:
-  0: master
-  1: chrome.exe
-  2: spotify.exe
-  3:
-    - pathofexile_x64.exe
-    - rocketleague.exe
-  4: discord.exe
+  0: 
+    - master
+#    - TIDALPlayer.exe
+#  1: chrome.exe
+#  2: spotify.exe
+#  3:
+#    - pathofexile_x64.exe
+#    - rocketleague.exe
+#  4: discord.exe
 
 # set this to true if you want the controls inverted (i.e. top is 0%, bottom is 100%)
 invert_sliders: false
 
 # settings for connecting to the arduino board
-com_port: COM4
+com_port: COM3
 baud_rate: 9600
 
 # limits how often deej will look for new processes

@@ -14,6 +14,8 @@ import (
 	"go.uber.org/zap"
 
 	"github.com/omriharel/deej/util"
+
+	keybd_event "github.com/micmonay/keybd_event"
 )
 
 // SerialIO provides a deej-aware abstraction layer to managing serial I/O
@@ -41,7 +43,7 @@ type SliderMoveEvent struct {
 	PercentValue float32
 }
 
-var expectedLinePattern = regexp.MustCompile(`^\d{1,4}(\|\d{1,4})*\r\n$`)
+var expectedLinePattern = regexp.MustCompile(`^\d{1,4}(\|\d{1,4})*;(toggle)?\r\n$`)
 
 // NewSerialIO creates a SerialIO instance that uses the provided deej
 // instance's connection info to establish communications with the arduino chip
@@ -231,15 +233,32 @@ func (sio *SerialIO) handleLine(logger *zap.SugaredLogger, line string) {
 	// this function receives an unsanitized line which is guaranteed to end with LF,
 	// but most lines will end with CRLF. it may also have garbage instead of
 	// deej-formatted values, so we must check for that! just ignore bad ones
+
 	if !expectedLinePattern.MatchString(line) {
+		logger.Debugw("regexp failed")
 		return
 	}
 
 	// trim the suffix
 	line = strings.TrimSuffix(line, "\r\n")
 
+	toggleLine := strings.Split(line, ";")
+
+	if toggleLine[1] != "" {
+		kb, _ := keybd_event.NewKeyBonding()
+
+		// Select keys to be pressed
+		kb.SetKeys(keybd_event.VK_F24)
+
+		kb.HasALT(true)
+		kb.HasCTRL(true)
+
+		// Press the selected keys
+		kb.Launching()
+	}
+
 	// split on pipe (|), this gives a slice of numerical strings between "0" and "1023"
-	splitLine := strings.Split(line, "|")
+	splitLine := strings.Split(toggleLine[0], "|")
 	numSliders := len(splitLine)
 
 	// update our slider count, if needed - this will send slider move events for all
