@@ -1,7 +1,7 @@
 #Deej_toggle
 
 ##Introduction
-This project is a straight fork of the original [deej](https://github.com/omriharel/deej/tree/b0e10f51048a11ee28937e4910bb6d44187c9a2d#hardware), with the added functionality of a button to swap between audo devices. To do this, I had to use external software called [SoundSwitch](https://github.com/Belphemur/SoundSwitch). This repository will likely NOT be maintained regularly, and as such, use at your own discretion. 
+This project is a straight copy of the original [deej](https://github.com/omriharel/deej/tree/b0e10f51048a11ee28937e4910bb6d44187c9a2d#hardware), with the added functionality of a button to swap between audo devices. To do this, I had to use external software called [SoundSwitch](https://github.com/Belphemur/SoundSwitch). This repository will likely NOT be maintained regularly, and as such, use at your own discretion. 
 
 ##Background
 My wish when first finding out about this project was for there to be a way to toggle between headphones and speakers on the push of a button. Unfortunately, this was not in the works at the time, so I decided to make this myself. 
