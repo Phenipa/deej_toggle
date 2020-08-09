@@ -248,7 +248,7 @@ func (sio *SerialIO) handleLine(logger *zap.SugaredLogger, line string) {
 		kb, _ := keybd_event.NewKeyBonding()
 
 		// Select keys to be pressed
-		kb.SetKeys(keybd_event.VK_F24)
+		kb.SetKeys(keybd_event.VK_F12)
 
 		kb.HasALT(true)
 		kb.HasCTRL(true)
